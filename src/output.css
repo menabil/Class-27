@@ -252,35 +252,20 @@
   .table {
     display: table;
   }
-  .h-\[0px\] {
-    height: 0px;
-  }
   .h-\[1px\] {
     height: 1px;
-  }
-  .h-\[50px\] {
-    height: 50px;
   }
   .h-\[60px\] {
     height: 60px;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/4 {
     width: calc(1/4 * 100%);
-  }
-  .w-\[0px\] {
-    width: 0px;
   }
   .w-\[40\%\] {
     width: 40%;
   }
   .w-\[48\%\] {
     width: 48%;
-  }
-  .w-\[50px\] {
-    width: 50px;
   }
   .w-\[60\%\] {
     width: 60%;
@@ -299,9 +284,6 @@
   }
   .max-w-\[1300px\] {
     max-width: 1300px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .resize {
     resize: both;
@@ -371,17 +353,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\/images\/\'\)\] {
-    background-image: url('../images/');
-  }
   .bg-\[url\(\'\.\.\/images\/gdbanner\.png\'\)\] {
     background-image: url('../images/gdbanner.png');
   }
   .bg-\[url\(\'\.\.\/images\/intrest\.png\'\)\] {
     background-image: url('../images/intrest.png');
-  }
-  .bg-\[url\(\'images\/intrest\.png\'\)\] {
-    background-image: url('images/intrest.png');
   }
   .bg-cover {
     background-size: cover;
@@ -410,9 +386,6 @@
   .px-\[145px\] {
     padding-inline: 145px;
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -427,9 +400,6 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
-  }
-  .py-\[20px\] {
-    padding-block: 20px;
   }
   .py-\[30px\] {
     padding-block: 30px;
@@ -449,17 +419,8 @@
   .py-\[55px\] {
     padding-block: 55px;
   }
-  .py-\[60px\] {
-    padding-block: 60px;
-  }
-  .py-\[70px\] {
-    padding-block: 70px;
-  }
   .py-\[100px\] {
     padding-block: 100px;
-  }
-  .py-\[120px\] {
-    padding-block: 120px;
   }
   .py-\[125px\] {
     padding-block: 125px;
@@ -627,9 +588,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-50 {
     opacity: 50%;
   }
@@ -646,10 +604,6 @@
   .shadow-customTwo {
     --tw-shadow: 27px 37px 80px 0 var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -774,11 +728,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -856,7 +805,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
