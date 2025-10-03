@@ -19,13 +19,60 @@
   </head>
   <body>
     <!-- Header part start -->
-    <div class="bg-[#F9F9FC] py-10">
+    <div class="max-w-[1300px] mx-auto py-[10px] bg-[#F9F9FC]">
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start bg-[#F9F9FC]">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>HOME</a></li>
+              <li><a>ABOUT US</a></li>
+              <li><a>SERVICES</a></li>
+              <li><a>WORKS</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"
+            ><img src="images/LOGO.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>HOME</a></li>
+            <li><a>ABOUT US</a></li>
+            <li><a>SERVICES</a></li>
+            <li><a>WORKS</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="bg-[#F9F9FC] py-10 opacity-0 hidden lg:opacity-1 lg:visible">
       <div class="max-w-[1300px] mx-auto">
         <div class="flex justify-between">
           <div class="">
             <img src="images/LOGO.png" alt="LOGO.png" />
           </div>
-          <div class="">
+          <div class="lg:opacity-1">
             <ul class="flex gap-x-[50px] font-pop text-sm">
               <li><a href="#">HOME</a></li>
               <li><a href="#">ABOUT US</a></li>
@@ -42,33 +89,35 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Header part end -->
     <!-- Banner part start -->
-    <div class="bg-[#F9F9FC] py-5">
-      <div class="max-w-[1300px] mx-auto">
-        <div class="flex justify-between">
-          <div class="w-[40%] mt-[120px]">
-            <h4 class="font-pop text-primary font-medium text-base">
-              SAKIB AL HASAN
+    <div class="lg:bg-[#F9F9FC] py-5">
+      <div class="lg:max-w-[1300px] mx-auto max-w-[640px]">
+        <div class="lg:flex lg:justify-between text-center lg:text-left">
+          <div class="lg:w-[40%] lg:mt-[120px]">
+            <h4 class="font-pop text-primary font-medium text-base pt-5">
+              DAVID FLASH
             </h4>
-            <h1 class="py-8 font-pop text-[#333] font-bold text-[60px]">
-              Hello, my name’s Sakib. I’m MERN Stack Developer.
+            <h1
+              class="py-8 font-pop text-[#333] font-bold lg:text-[60px] text-[44px] lg:w-[480px] w-[365px] lg:m-0 m-auto"
+            >
+              Hello, my name’s David. I’m graphic designer.
             </h1>
             <a
               href="#"
-              class="mr-2 bg-primary py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
+              class="lg:mr-2 lg:mx-0 mx-28 bg-primary py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
               ><i class="fa-regular fa-envelope mr-2 text-[20px]"></i> CONTACT
               ME</a
             >
             <a
               href="#"
-              class="bg-primary py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
+              class="bg-primary mt-2 py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
               ><i class="fa-solid fa-download mr-2 text-[20px]"></i> DOWNLOAD
               CV</a
             >
           </div>
-          <div class="w-[60%]">
+          <div class="lg:w-[60%] mt-20">
             <img src="images/banner.png" alt="banner.png" class="w-full" />
           </div>
         </div>
@@ -77,9 +126,9 @@
     <!-- Banner part end -->
     <!-- Counter part start -->
     <div class="pt-[90px] pb-[80px]">
-      <div class="max-w-[1300px] mx-auto">
-        <div class="flex justify-between items-center">
-          <div class="w-1/4 text-center">
+      <div class="lg:max-w-[1300px] mx-auto">
+        <div class="flex justify-between items-center flex-wrap">
+          <div class="lg:w-1/4 w-1/2 text-center">
             <h3 class="font-pop font-semibold text-[48px]">
               <span class="counter">100</span> +
             </h3>
@@ -87,13 +136,13 @@
               PROJECTS
             </p>
           </div>
-          <div class="w-1/4 text-center">
+          <div class="lg:w-1/4 w-1/2 text-center">
             <h3 class="font-pop font-semibold text-[48px] counter">24</h3>
             <p class="font-pop font-medium text-base text-[#121212] opacity-70">
               WINNING AWARD
             </p>
           </div>
-          <div class="w-1/4 text-center">
+          <div class="lg:w-1/4 w-1/2 text-center mt-5 lg:mt-0">
             <h3 class="font-pop font-semibold text-[48px]">
               <span class="counter">70</span> +
             </h3>
@@ -101,7 +150,7 @@
               HAPPY CLIENTS
             </p>
           </div>
-          <div class="w-1/4 text-center">
+          <div class="lg:w-1/4 w-1/2 text-center mt-5 lg:mt-0">
             <h3 class="font-pop font-semibold text-[48px] counter">10</h3>
             <p class="font-pop font-medium text-base text-[#121212] opacity-70">
               YEAR EXPERIENCE
@@ -120,16 +169,19 @@
           >
             SERVICES
           </h4>
-          <h3 class="font-pop text-[45px] font-semibold pb-3 text-black">
+          <h3
+            class="font-pop text-[45px] font-semibold pb-3 text-black lg:px-0 px-30"
+          >
             What I Do For My Customer.
           </h3>
-          <p class="font-pop text-base pb-[64px] text-[121212] opacity-70">
+          <p
+            class="font-pop text-base pb-[64px] text-[121212] opacity-70 lg:px-90 px-33"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
-            <br />
             blandit lectus. Praesent at hendrerit velit, at dictum nisl.
           </p>
         </div>
-        <div class="flex justify-between">
+        <div class="flex lg:justify-between flex-wrap justify-center">
           <div
             class="py-[55px] px-[35px] rounded-[24px] text-center bg-white shadow-custom"
           >
@@ -147,7 +199,7 @@
             </p>
           </div>
           <div
-            class="py-[55px] px-[35px] rounded-[24px] text-center bg-white shadow-custom"
+            class="py-[55px] px-[35px] rounded-[24px] text-center bg-white shadow-custom mt-5 lg:mt-0"
           >
             <img
               src="images/pdesienb.png"
@@ -163,7 +215,7 @@
             </p>
           </div>
           <div
-            class="py-[55px] px-[35px] rounded-[24px] text-center bg-white shadow-custom"
+            class="py-[55px] px-[35px] rounded-[24px] text-center bg-white shadow-custom mt-5 lg:mt-0"
           >
             <img
               src="images/motograp.png"
@@ -184,9 +236,11 @@
     <!-- Service part end -->
     <!-- GD part start -->
     <div
-      class="bg-no-repeat bg-cover bg-center bg-[url('../images/gdbanner.png')] py-[40px]"
+      class="bg-no-repeat bg-cover bg-center bg-[url('../images/gdbanner.png')] lg:py-[40px] py-0"
     >
-      <div class="max-w-[1300px] mx-auto">
+      <div
+        class="lg:max-w-[1300px] max-w-[640px] mx-auto text-center lg:text-left"
+      >
         <div class="">
           <h4
             class="font-pop text-base font-medium pb-[22px] text-primary pt-[105px]"
@@ -199,9 +253,10 @@
             10 Years Of <br />
             Experience.
           </h3>
-          <p class="pb-[30px] font-pop text-[#333] text-base">
+          <p
+            class="pb-[30px] font-pop text-[#333] text-base px-33 lg:px-0 lg:pr-180"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
-            <br />
             blandit lectus. Praesent at hendrerit velit, at dictum nisl.
           </p>
           <a
@@ -215,31 +270,41 @@
     </div>
     <!-- GD part end -->
     <!-- Logo part start -->
-    <div class="py-[125px]">
-      <div class="max-w-[1270px] mx-auto">
-        <img src="images/SECTION CLIENTS.png" alt="" class="w-full" />
+    <div class="lg:py-[100px] py-16">
+      <div class="lg:max-w-[1270px] max-w-[500px] mx-auto">
+        <img
+          src="images/SECTION CLIENTS.png"
+          alt=""
+          class="w-full lg:opacity-100 opacity-0 lg:visible"
+        />
+        <img
+          src="images/mbpicc.png"
+          alt=""
+          class="lg:opacity-0 opacity-100 w-full lg:hidden visible"
+        />
       </div>
     </div>
     <!-- Logo part end -->
     <!-- Protfolio part start -->
-    <div class="pb-[135px]">
-      <div class="max-w-[1300px] mx-auto">
+    <div class="lg:pb-[135px] pb-[70px]">
+      <div class="max-w-[1300px] mx-auto text-center lg:text-left">
         <h4
-          class="font-pop text-base font-medium pb-[22px] text-primary pt-[105px]"
+          class="font-pop text-base font-medium pb-[22px] text-primary pt-[30px]"
         >
           PORTFOLIO
         </h4>
-        <div class="flex justify-between pb-[50px]">
+        <div class="lg:flex lg:justify-between pb-[50px] items-center">
           <h3 class="font-semibold text-[44px] font-pop">Selected Works.</h3>
-          <p class="text-base font-pop opacity-70 text-[#121212]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            <br />
-            vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.
+          <p
+            class="text-base font-pop opacity-70 text-[#121212] lg:w-130 px-33 lg:px-0"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+            blandit lectus. Praesent at hendrerit velit, at dictum nisl.
           </p>
         </div>
-        <div class="flex justify-between">
+        <div class="lg:flex lg:justify-between">
           <div
-            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] w-[48%] shadow-custom"
+            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] lg:w-[48%] w-[85%] shadow-custom mx-auto lg:mx-0 mb-7 lg:mb-0"
           >
             <div
               class="bg-white pt-[33px] pb-[46px] pl-[45px] rounded-bl-[24px] rounded-br-[24px]"
@@ -253,7 +318,7 @@
             </div>
           </div>
           <div
-            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] w-[48%] shadow-custom"
+            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] lg:w-[48%] w-[85%] shadow-custom mx-auto lg:mx-0 mb-7 lg:mb-0"
           >
             <div
               class="bg-white pt-[33px] pb-[46px] pl-[45px] rounded-bl-[24px] rounded-br-[24px]"
@@ -267,9 +332,9 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-between mt-[45px]">
+        <div class="lg:flex lg:justify-between lg:mt-[45px]">
           <div
-            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] w-[48%] shadow-custom"
+            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] lg:w-[48%] w-[85%] shadow-custom mx-auto lg:mx-0 mb-7 lg:mb-0"
           >
             <div
               class="bg-white pt-[33px] pb-[46px] pl-[45px] rounded-bl-[24px] rounded-br-[24px]"
@@ -283,7 +348,7 @@
             </div>
           </div>
           <div
-            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] w-[48%] shadow-custom"
+            class="rounded-[24px] bg-[#C4C4C4] pt-[500px] lg:w-[48%] w-[85%] shadow-custom mx-auto lg:mx-0 mb-7 lg:mb-0"
           >
             <div
               class="bg-white pt-[33px] pb-[46px] pl-[45px] rounded-bl-[24px] rounded-br-[24px]"
@@ -301,25 +366,32 @@
     </div>
     <!-- Protfolio part end -->
     <!-- Testymony part start -->
-    <div class="mb-[135px] bg-[#F9F9FC] py-[100px]">
-      <div class="max-w-[1270px] mx-auto">
-        <div class="text-center">
-          <h4
-            class="font-pop text-base font-medium pb-3 text-primary pt-[50px]"
-          >
-            TESTIMONY
-          </h4>
-          <h3 class="font-pop text-[45px] font-semibold pb-3 text-black">
-            What Our Clients Say.
-          </h3>
-          <p class="font-pop text-base pb-[60px] text-[121212] opacity-70">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
-            <br />
-            blandit lectus. Praesent at hendrerit velit, at dictum nisl.
-          </p>
+    <div class="lg:mb-[50px] mb-0 pb-[80px]">
+      <div class="bg-[#F9F9FC] py-[100px]">
+        <div class="max-w-[1270px] mx-auto">
+          <div class="text-center">
+            <h4 class="font-pop text-base font-medium pb-3 text-primary">
+              TESTIMONY
+            </h4>
+            <h3
+              class="font-pop text-[45px] font-semibold pb-3 text-black px-20 lg:px-0"
+            >
+              What Our Clients Say.
+            </h3>
+            <p
+              class="font-pop text-base pb-[60px] text-[121212] opacity-70 px-33 lg:px-[360px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.
+            </p>
+          </div>
         </div>
-        <div class="flex justify-between gap-x-[20px]">
-          <div class="portfolioItems rounded-[24px] shadow-customTwo bg-white">
+      </div>
+      <div class="max-w-[1200px] mx-auto mt-[-100px]">
+        <div class="lg:flex lg:justify-between lg:gap-x-[80px]">
+          <div
+            class="portfolioItems rounded-[24px] shadow-customTwo bg-white mx-[123px] lg:mx-0"
+          >
             <div class="itemText py-[45px] px-[85px]">
               <i class="fa-regular fa-star text-[#EEC01C]"></i>
               <i class="fa-regular fa-star text-[#EEC01C]"></i>
@@ -349,7 +421,9 @@
               </div>
             </div>
           </div>
-          <div class="portfolioItems rounded-[24px] shadow-customTwo bg-white">
+          <div
+            class="portfolioItems rounded-[24px] shadow-customTwo bg-white mx-[123px] lg:mx-0 mt-7 lg:mt-0"
+          >
             <div class="itemText py-[45px] px-[85px]">
               <i class="fa-regular fa-star text-[#EEC01C]"></i>
               <i class="fa-regular fa-star text-[#EEC01C]"></i>
@@ -386,17 +460,17 @@
     <!-- Intrested part start -->
     <div class="mb-[130px]">
       <div
-        class="max-w-[1300px] mx-auto bg-no-repeat bg-cover bg-center bg-[url('../images/intrest.png')] rounded-[24px] py-[50px] text-center"
+        class="max-w-[1300px] lg:mx-auto bg-no-repeat bg-cover bg-center bg-[url('../images/intrest.png')] rounded-[24px] py-[50px] text-center mx-[80px]"
       >
         <h3
-          class="text-[#333] text-[50px] font-semibold font-pop pb-[20px] mt-[100px]"
+          class="text-[#333] text-[50px] font-semibold font-pop lg:pb-[20px] pb-[40px] lg:mt-[100px] mt-[60px]"
         >
           Interested Working <br />
           With me? Let's connect!
         </h3>
         <a
           href="#"
-          class="mb-[115px] mr-2 bg-primary py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
+          class="lg:mb-[115px] mb-[50px] mr-2 bg-primary py-6 inline-block px-9 rounded-[50px] text-white font-pop text-sm font-medium hover:bg-transparent hover:text-[#333] hover:duration-500 items-center"
           ><i class="fa-regular fa-envelope mr-2 text-[20px]"></i> CONTACT ME</a
         >
       </div>
@@ -404,10 +478,12 @@
     <!-- Intrested part end -->
     <!-- Footer part start -->
     <div
-      class="max-w-[1300px] mx-auto bg-[#333] rounded-tl-[24px] rounded-tr-[24px] py-[30px]"
+      class="max-w-[1300px] lg:mx-auto bg-[#333] rounded-tl-[24px] rounded-tr-[24px] py-[30px] mx-[30px]"
     >
-      <div class="flex justify-between pt-[100px] pb-[80px] px-[145px]">
-        <div class="leftFooter w-[40%]">
+      <div
+        class="lg:flex lg:justify-between lg:pt-[100px] pt-[70px] lg:pb-[80px] pb-[50px] px-[145px] text-center lg:text-left"
+      >
+        <div class="lg:w-[40%]">
           <img src="images/Logics.png" alt="" />
           <p class="text-base leading-[32px] text-white mt-[20px]">
             Lorem ipsum dolor sit amet, consectetur <br />
@@ -415,7 +491,7 @@
             Praesent at hendrerit.
           </p>
         </div>
-        <div class="rightFooter text-white text-base">
+        <div class="text-white text-base mt-[30px]">
           <a href="#" class="block"
             ><i class="fa-regular fa-envelope mr-[10px]"></i
             >inquiry@portostar.com</a
@@ -440,16 +516,22 @@
           </div>
         </div>
       </div>
-      <div class="h-[1px] w-[1000px] bg-[#404040] ml-[150px]"></div>
-      <div class="">
-        <div class="flex justify-between pt-[50px] pb-[50px] px-[145px]">
-          <ul class="flex gap-x-[45px] uppercase text-white text-base">
+      <div
+        class="h-[1px] lg:w-[1000px] w-[400px] bg-[#404040] lg:ml-[150px] mx-auto lg:mx-0"
+      ></div>
+      <div class="text-center">
+        <div
+          class="lg:flex lg:justify-between lg:py-[50px] lg:px-[145px] px-[100px] py-[30px]"
+        >
+          <ul
+            class="flex lg:gap-x-[45px] gap-x-[20px] uppercase text-white text-base justify-center lg:justify-normal"
+          >
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Works</a></li>
           </ul>
-          <div class="rightfooterFlex">
+          <div class="rightfooterFlex pt-7 lg:pt-0">
             <p class="text-white text-base opacity-60">© All Right Reserved</p>
           </div>
         </div>
